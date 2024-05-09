@@ -1,3 +1,4 @@
+
 import styles from './styles/botCollection.module.css'
 
 export default function YourBotArmy({ botArmy, onRemoveBot }) {
@@ -11,7 +12,7 @@ export default function YourBotArmy({ botArmy, onRemoveBot }) {
     }
     return <div className={styles.army}>
         <div className={styles.heading}>
-            <img src='/images/botarmy.png'/>
+            <img src='/images/bot.army.png'/>
             <h3>Bot Ultimatum Army</h3>
         </div>
         <div className={styles.armyCont}>
@@ -30,7 +31,7 @@ export default function YourBotArmy({ botArmy, onRemoveBot }) {
         {
             botArmy.length ? null :
                 <h3 className={styles.placeholder}
-                >{`<create your badass bot army/>`}</h3>
+                >{`CREATE YOUR BOT ARMY HERE`}</h3>
         }
     </div>
 }
